@@ -1,0 +1,162 @@
+/* Global Style */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #FFF5E4, #FFB6C1);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+  transform: scale(1.1);
+}
+
+nav a.active {
+  border-bottom: 2px solid #ffdd57;
+}
+
+/* Container */
+.container {
+  flex: 1;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+}
+
+.foto-profil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #48b1bf;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.foto-profil:hover {
+  transform: scale(1.05);
+}
+
+.profile h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #48b1bf;
+  color: white;
+}
+
+/* Hobi List */
+.hobi {
+  margin-top: 15px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.hobi li {
+  background: #f4f6f9;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.hobi li:hover {
+  transform: translateX(5px);
+  background: #e0f7fa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 12px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
